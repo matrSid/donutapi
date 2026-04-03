@@ -957,7 +957,7 @@
 
 // ─── PROXY HELPER ───
 async function apiFetch(path) {
-  const res = await fetch(`http://localhost:3000/api${path}`, {
+  const res = await fetch(`https://drdonut-jc1o.onrender.com/api${path}`, {
     signal: AbortSignal.timeout(10000),
   });
   const text = await res.text();
